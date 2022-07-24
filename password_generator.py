@@ -46,6 +46,7 @@ class GUI:
 		self.main_entry.delete(0,END)
 		self.main_entry.insert(0,str(generated))
 		self.main_entry["state"]="readonly"
+		del generated
 	def pop_up(self,event):
 		try:
 			self.pop_menu.tk_popup(event.x_root+37, event.y_root-15, 0)
